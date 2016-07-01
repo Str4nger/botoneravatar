@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'GothamMedium';
+  src: url("../fonts/Gotham/gotham-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/gotham-medium-webfont.otf") format("opentype"), url("../fonts/Gotham/gotham-medium-webfont.woff") format("woff"), url("../fonts/Gotham/gotham-medium-webfont.ttf") format("truetype"), url("../fonts/Gotham/gotham-medium-webfont.svg#gotham-medium-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #154148;
+  font-family: 'GothamMedium';
+  color: #fff;
+  background: url('../img/bg.jpg') repeat;
+}
+audio {display: none;}
+header {
+  background: url("../img/highlight-botonera.jpg") center center no-repeat;
+  background-size: cover;
+  height: 350px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+  position: relative;
+}
+.sugerencia {
+  background-color: #25B572;
+  color: #fff;
+  font-family: 'GothamMedium';
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 15px;
+  position: absolute;
+  width: 220px;
+  display: block;
+  letter-spacing: 1px;
+  left: 50%;
+  margin-left: -125px;
+  bottom: 5%;
+}
+.sonido {
+
+}
+h3 {
+  text-align: center;
+  clear: both;
+  padding-top: 30px;
+  text-shadow: #112E49 1px 1px 0,
+              #112E49 2px 2px 0,
+              #112E49 3px 3px 0,
+              #112E49 4px 4px 0,
+              #112E49 5px 5px 0,
+              #112E49 6px 6px 0;
+}
+ul {
+  margin: 0 auto;
+  width: 80%;
+}
+ul li {
+  list-style-type: none;
+  float: left;
+  margin: 6px;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: #25B572;
+  color: #fff;
+  font-family: 'GothamMedium';
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: #0f8c52 1px 1px 0,
+              #0f8c52 2px 2px 0,
+              #0f8c52 3px 3px 0,
+              #0f8c52 4px 4px 0,
+              #0f8c52 5px 5px 0,
+              #0f8c52 6px 6px 0;
+  transition: all .2s ease; /*Magia de la transición, ojo con los vendor-prefixes*/
+  top: 0;
+  left: 0;
+}
+button:hover {
+  background-color: #1ea767;
+}
+button:active, button:active {
+  top: 6px; /* 1px por cada box-shadow aplicado */
+  left: 6px;
+  box-shadow: none;
+}
+.gastado button {
+  color: rgba(255,255,255,0.6);
+  background: url('../img/gastado.png') center center no-repeat;
+}
+.simp button {
+  color: #153c4b;
+  background-color: #f1da0b;
+  box-shadow: #cdb300 1px 1px 0,
+              #cdb300 2px 2px 0,
+              #cdb300 3px 3px 0,
+              #cdb300 4px 4px 0,
+              #cdb300 5px 5px 0,
+              #cdb300 6px 6px 0;
+}
+footer {
+  clear: both;
+  padding: 30px;
+}
+footer p {
+  text-align: center;
+  color: #4F6467;
+}
+footer p span {
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  ul {
+    margin: 15px 0 0;
+  }
+  ul li {
+    width: 100%;
+    display: block;
+  }
+  button {
+    width: 100%;
+  }
+}
