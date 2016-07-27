@@ -15,3 +15,16 @@ document.addEventListener('play', function(e){
         }
     }
 }, true);
+
+var kkeys = [], awesome = "67,65,76,65,66,82,79";
+$(document).keydown(function(e) {
+  kkeys.push( e.keyCode );
+  if ( kkeys.toString().indexOf( awesome ) >= 0 ) {
+
+    $(document).unbind('keydown',arguments.callee);
+    $("body").addClass("awesome");
+    $('#awesome').siblings('audio').trigger('play');
+    //(myAudioObject).loop = true
+  }
+
+});

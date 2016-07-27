@@ -13,6 +13,10 @@ body {
   color: #fff;
   background: url('../img/bg.jpg') repeat;
 }
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
 audio {display: none;}
 header {
   background: url("../img/highlight-botonera.jpg") center center no-repeat;
@@ -55,15 +59,18 @@ h3 {
 ul {
   margin: 0 auto;
   width: 80%;
+  padding: 0;
 }
 ul li {
   list-style-type: none;
-  float: left;
-  margin: 6px;
+  margin: 12px 0;
+  width: 100%;
+  display: block;
 }
 
 button {
   outline: none;
+  width: 100%;
   border: none;
   padding: 10px;
   background-color: #25B572;
@@ -95,7 +102,7 @@ button:active, button:active {
 }
 .gastado button {
   color: rgba(255,255,255,0.6);
-  background: url('../img/gastado.png') center center no-repeat;
+  background: url('../img/gastado.png') center center repeat;
 }
 .simp button {
   color: #153c4b;
@@ -118,16 +125,10 @@ footer p {
 footer p span {
   font-size: 10px;
 }
-
-@media (max-width: 768px) {
-  ul {
-    margin: 15px 0 0;
-  }
-  ul li {
-    width: 100%;
-    display: block;
-  }
-  button {
-    width: 100%;
-  }
+a.awesome {
+  color: #133C4A;
+  text-align: center;
+  font-size: 9px;
+  text-decoration: none;
+  cursor: none;
 }
